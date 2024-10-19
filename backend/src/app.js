@@ -29,13 +29,13 @@ app.use(express.urlencoded({extended: true, limit: "16kb"}))
 app.use(cookieParser())
 
 //importing routes
-
+import userRouter from "./routes/user.route.js";
 
 app.get("/",(req, res) => {
     res.send('hello world')
   })
 
 //route decleare
-
+app.use("/api/v1/user",userRouter)
 
 export {app}

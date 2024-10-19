@@ -5,7 +5,7 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true
       },
-      copanyName: {
+      companyName: {
         type: String,
         required: true
       },
@@ -13,11 +13,11 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true
       },
-      mobileNo: {
+      phoneNumber: {
         type: String,
         required: true
       },
-      email: { 
+      companyEmail: { 
         type: String, 
         required: true, 
         unique: true 
